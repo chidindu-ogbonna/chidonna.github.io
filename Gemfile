@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+gem 'minima', '~> 2.1', '>= 2.1.1'
+gem 'jekyll-theme-minimal', '~> 0.0.4'
+gem 'jekyll-sitemap'
+gem 'jekyll-feed'
+gem 'jekyll-paginate'
+gem 'jekyll-gist'
