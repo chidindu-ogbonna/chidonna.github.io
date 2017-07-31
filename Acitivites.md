@@ -3,6 +3,9 @@ layout: page
 title: Acitivities
 ---
 
+
+<!-- >  TODO: Work on creating a particular storage for all activites -->
+
 # [Unistore](unistore.com.ng)
 This is a student multivendor marketplace, made for students to easily buy and sell, and more than anything foster partnerships between students.
 
