@@ -4,22 +4,20 @@ title: Home
 ---
 
 <div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}/{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
-  </div>
-  {% endfor %}
+  <h1><font size="+3"> Blog Posts </font></h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+       <!-- {{ post.excerpt | remove: '<p>' | remove: '</p>' }} -->
+       <span class="post-meta__tags"> *   on {% for tag in post.tags %}<a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span>
+    <hr class="post-list__divider ">
+    {% endfor %}
+   </ul>
 </div>
 
 <div class="pagination">
+  <font size="+1">
   {% if paginator.next_page %}
     <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
   {% else %}
@@ -34,5 +32,48 @@ title: Home
   {% else %}
     <span class="pagination-item newer">Newer</span>
   {% endif %}
+   </font>
 </div>
 
+<div id="More">
+  <h1>
+  <font size="+3">
+      Currently Active in
+   </font>
+   </h1>
+  <ul class="posts">
+    <li><span>23 Nov 2010</span> &raquo; <a href="http://vimeo.com/17118008">Video: Erlang Factory - Mastering Git Basics</a></li>
+  </ul>
+
+  <h1>
+  <font size="+3">
+      Noteworthy Open Source Projects and Specifications
+  </font>
+  </h1>
+  <ul class="posts">
+    <li><a href="http://github.com/jekyll/jekyll/">Jekyll:</a> A simple, blog aware, static site generator (used for this site).</li>
+    <li><a href="http://github.com/mojombo/ernie/">Ernie:</a> Ruby/Erlang Hybrid BERT-RPC server.</li>
+  </ul>
+</div>
+
+<!-- {% if site.author.twitter_username %} -->
+    <!-- Twitter -->
+<li class="navigation__item">
+<a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
+    <i class="icon icon-social-twitter"></i>
+    <span class="label">Twitter</span>
+</a>
+</li>
+<!-- {% endif %} -->
+
+{% include analytics.html %}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-103666117-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

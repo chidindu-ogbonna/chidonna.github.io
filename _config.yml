@@ -1,25 +1,15 @@
-# Setup
 title:               Chidindu Ogbonna
 tagline:             '  A Programmer from Nigeria'
 description: '<img src="/public/avatar.png" style="width: 400px;"/>'
-
 url:                 http://chidonna.github.io
 baseurl: ""
 paginate:            5
 permalink: /:year/:title/   # permalink: /:title/
-
+excerpt_separator: <!--more-->
 destination: _site
-permalink: /:year/:title/   # permalink: /:title/
 google_analytics: UA-103666117-1
 # disqus: 'disqus-shortname'
 
-# About/contact
-author:
-  name:              Chidindu Ogbonna
-  url:               https://twitter.com/chidonna_codes
-  email:             pogbonna34@gmail.com
-
-# Custom vars
 version:             3.5.1
 markdown: kramdown
 highlighter: rouge
@@ -27,17 +17,14 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
     css_class: 'highlight'
 
-# Plugins
 plugins:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-sitemap
+  - jekyll-feed
   - jekyll-paginate
   - jekyll-gist
 
-# Exclude these files from your production _site
 exclude:
   - index.md
   - Gemfile
@@ -46,3 +33,6 @@ exclude:
   - README.md
   - help.md
   - CNAME
+
+
+

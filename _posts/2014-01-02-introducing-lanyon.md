@@ -1,9 +1,16 @@
 ---
 layout: post
-title: Introducing Lanyon
+title: Understanding Lanyon
+date: 2017-07-31
+tags:
+    - neovim
+    - programming
 ---
 
-Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+
+Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. 
+<!--more-->
+It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
 ### Built on Poole
 
