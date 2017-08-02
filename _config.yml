@@ -1,7 +1,6 @@
-
+# Add to any post to crosspost
 # crosspost_to_medium: true
 
-# Add to any post to crosspost
 name: Chidindu Ogbonna
 bio: 'A Programmer from Nigeria'
 description: My thoughts on all things Software
@@ -56,6 +55,11 @@ blog-nav-links: false
 # post-advance-links: [blog]
 show-author: true
 animation: true
+
+sass:
+    sass_dir: _sass
+    style: :compressed
+
 
 gems:
   - jemoji
