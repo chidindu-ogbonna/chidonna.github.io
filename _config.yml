@@ -69,4 +69,4 @@ gems:
 jekyll-mentions:
     base_url: https://chidonna.github.io
 
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, indigo-gh-pages.zip, Rakefile, screen-shot.png, travis.sh, tasks, LICENSE, help.md]
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, indigo-gh-pages.zip, Rakefile, screen-shot.png, travis.sh, tasks, LICENSE, help.md, new_post.md]
