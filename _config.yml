@@ -17,7 +17,7 @@ highlighter: rouge
 url: https://chidonna.github.io
 analytics-gooogle: 'UA-103666117-1'
 
-twitter: chidonna_codes
+twitter: chidonna_
 github: chidonna
 stackoverflow: users/5631950/bones97
 medium: chidonna
@@ -34,7 +34,8 @@ authors:
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
-width: normal
+# width: normal
+width: large
 
 # paginate: 5
 # paginate_path: "blog/:num/"
