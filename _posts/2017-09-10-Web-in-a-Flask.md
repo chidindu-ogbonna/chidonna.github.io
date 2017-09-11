@@ -163,7 +163,7 @@ The **manage.py** should contain the flask instance responsible for running the 
 `project/manage.py`
 
 ```python 
-!#/usr/bin/env python
+#!/usr/bin/env python3
 
 from flask_script import Manager
 from app import create_app
@@ -185,9 +185,9 @@ With this setup to run the application, you would run:
 
 `python manage.py runserver` 
 
-Note the shebang at the top, if that is included you can simply run it as:
+Note the shebang at the top. If that is included and you converted to the file to an executable, you could simply run it as:
 
-`./manage.py runserver` if you changed it to an executable.
+`./manage.py runserver` 
 
 ### Templates
 This directory would contain the [jinja2](http://jinja.pocoo.org/) templates (web pages) for your application. From the index page, to the sign up page, to the login page, to the products page and every other page in the web application. Every web page to be rendered throughout the runtime of this application is to be kept in the templates folder, since this is where Flask searches for web pages to be rendered.
@@ -455,7 +455,7 @@ For the register view function:
 
 `project/app/templates/register.html`
 
-I can't show you any snippet of the jinja2 templating system and how it works, because it keeps messing with the liquid templating used on this blog. Check out the documentation [here](http://jinja.pocoo.org/).
+I can't show you any snippet of the jinja2 templating system and how it works, because it keeps messing with the liquid templating used on this blog. Check out the documentation [here](http://jinja.pocoo.org/docs/latest/).
 
 
 ## Conclusion
