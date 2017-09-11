@@ -29,13 +29,13 @@ authors:
         bio: A Programmer from Nigeria
         external-image: false
         picture: 'assets/images/profile.jpg'
-        twitter: chidonna_codes
+        twitter: chidonna_
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
-# width: normal
-width: large
+width: normal
+# width: large
 
 # paginate: 5
 # paginate_path: "blog/:num/"
