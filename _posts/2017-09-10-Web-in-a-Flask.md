@@ -15,7 +15,7 @@ draft: false
 
 In this blog post, I will be going through the basic steps to take while trying to create a web application in Python, using a Python framework called Flask.
 
-Flask is a microframework (a minimalist framework that can be extended with extensions) for Python based on Werkzeug (a WSGI utility library for Python). Been a micro framework does not mean it can not be used for large projects, rather it means it can be used for small projects with relative easy :smirk:, and can be structured to suit the needs of application with no strict measures on how your application should be written.
+Flask is a microframework (a minimalist framework that can be extended with extensions) for Python based on Werkzeug (a WSGI utility library for Python). Being a micro framework does not mean it can not be used for large projects, rather it means it can be used for small projects with relative ease :smirk:, and can be structured to suit the needs of application with no strict measures on how your application should be structured.
 
 I will go through the methods, and steps I took while creating an e-commerce store and the various extensions I used. I won't teach you how to create an e-commerce store, neither will I teach you how to create a web application, rather I would show you just enough to get started with flask.
 
@@ -24,15 +24,15 @@ I will go through the methods, and steps I took while creating an e-commerce sto
 
 According to wikipedia, Bootstrap is a free and open-source front-end web framework for designing websites and web applications. It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions.
 
-I have a barely functional knowledge of HTML, a "Hello World" knowledge of Javascript and no knowledge whatsoever of CSS, yet I was able to hack together a pretty decent Web page using Bootstrap. While I am not sure if Bootstrap would be so efficient in creating Single Page Applications, it would do a very good job for sites more concerned with content. Since teaching you how to use Bootstrap is not the purpose of this blog post, all you need to know to get started with Bootstrap can be found [here](http://www.tutorialspoint.com/bootstrap/).
-> N.B Using templates can also form a very good base to start from. 
+As of writing my first web application with Flask, I had a barely functional knowledge of HTML, a "Hello World" knowledge of Javascript and no knowledge, whatsoever of CSS, yet I was able to hack together a pretty decent Web page using Bootstrap. While I am not sure if Bootstrap would be so efficient in creating Single Page Applications, it would do a very good job for sites more concerned with content. Since teaching you how to use Bootstrap is not the purpose of this blog post, all you need to know to get started with Bootstrap can be found [here](http://www.tutorialspoint.com/bootstrap/).
+> N.B Hardly do anyone write HTML and CSS for a web application from scratch, using templates can also form a very good base to start from. 
 
 ## Application structure:
 Some people start working on an application in a single file, and then modularize as the application grows. I think this can lead to avoidable refactoring and less errors during development.
 
 If you are not looking to create a large application, writing all your code in a single module would do, but even a small application can also get pretty messed up if everything is written in a single file. Therefore, to avoid unnecessary refactoring and fewer bashing of your head on the table, I encourage you to modularize your application. This application in this little tutorial would be written in modules.
 
-In flask this is how it most likely would be structured:
+In flask, this is how it most likely would be structured:
 
 ```shell
 ├── app/
@@ -52,7 +52,7 @@ In flask this is how it most likely would be structured:
 Having your application structured this way makes it easy to work on different parts of the project, without having to change plenty things.
 
 ### Configuration
-The **config.py** would contain the configuration variables your application requires to function. In this example it contains the location of the database to be used in the application (a SQlite3 database)
+The **config.py** would contain the configuration variables your application requires to function. In the example below, **config.py** contains the location of the database to be used in the application (a SQlite3 database)
 
 `project/config.py`
 
@@ -86,7 +86,7 @@ To build a web application using the Flask framework, the first thing you need i
 
 You would have to create an application factory. For the sake of this tutorial, this factory function would be called `create_app()`. This factory function would be responsible for creating multiple instance of the application, since the instances were created but not not initialized, `create_app()` would do this for the application.
 
-The application factory would be located in the **app** directory in the **\_\_init__.py** file. We would make use of relative imports, which is indicating the location of the target module relative to the source. Using dot notation, where the first dot indicates the current directory and each subsequent dot represents the next parent directory.
+The application factory would be located in the **app** directory in the **\_\_init__.py** file. We would make use of relative imports, which indicates the location of the target module relative to the source. Using dot notation, where the first dot indicates the current directory and each subsequent dot represents the next parent directory.
 
 > N.B Adding an \_\_init__.py to a folder makes it a package.
 
@@ -196,9 +196,9 @@ This directory would contain the [jinja2](http://jinja.pocoo.org/) templates (we
 This directory contains the CSS, Javascript files and every other file that is to be viewed in the application. The images (like favicon) and other files not generated dynamically are stored in this folder. If you downloaded the Bootstrap files, they would be stored in this folder.
 
 ## Database
-:cold_sweat: This is the arguably the most important aspect of a web application and definitely not the easiest to implement. You create models (tables), in those models you create columns and rows (columns are fixed, while rows vary depending on the number of entries in the model).
+:cold_sweat: This is arguably the most important aspect of a web application and definitely not the easiest to implement. You create models (tables); in those models you create columns and rows (columns are fixed, while rows vary depending on the number of entries in the database).
 
-Databases can be implemented using a number of ORMs (Object-Relational Mappers), such as SQLAlchemy and peewee and others (maybe). For the sake of this tutorial SQLAlchemy will be used (no particular reason). Using an ORM removes plenty of the trouble of having to write SQL commands and queries directly. It provides a virtual object database that can be used within the programming language, thus you not been required to execute SQL commands, except on occasions where you choose to, or need to (Yh!, sometimes you might need to).
+Databases can be implemented using a number of ORMs (Object-Relational Mappers), such as SQLAlchemy and peewee. For the sake of this tutorial, SQLAlchemy will be used (no particular reason). Using an ORM removes plenty of the trouble of having to write SQL commands and queries directly. It provides a virtual object database that can be used within the programming language, thus you will not be required to execute SQL commands directly, except on occasions where you choose to, or need to (Yh!, sometimes you might need to).
 
 To the next one; Flask-SQLAlchemy, this adds support for SQLAlchemy to your application.
 To add this to the application, in our **app/\_\_init__.py**
@@ -459,12 +459,15 @@ I can't show you any snippet of the jinja2 templating system and how it works, b
 
 
 ## Conclusion
-This tutorial does not go through every detail involved in writing a web application, but it does goes through enough to get you started, so don't go about looking for the most polished tutorial in the world, GET STARTED !!!
+This tutorial does not go through every detail involved in writing a web application, but it does enough to get you started, so don't go about looking for the most polished tutorial in the world, GET STARTED !!!
 
-> The best way to learn is by doing
->> -- <cite> John Sonmez </cite>
+<blockquote>
+The best way to learn is by doing
+
+<cite>John Sonmez</cite>
+</blockquote>
 
 Using a framework such as "Django" might seem like a straight forward go to when deciding which framework to go with, but Flask has its own advantages.
 
-Thank you for taking the time to read this, if you have anything, you would like to say me concerning flask, python or anything software, feel free to [contact me](mailto:pogbonna34@gmail). You can also send me a tweet. If you feeling particularly charitable, you can follow me on twitter or github just to see what am up to :wink:.
+Thank you for taking the time to read this. If you have anything, you would like to say to me concerning flask, python or anything software, feel free to [contact me](mailto:pogbonna34@gmail). You can also send me a tweet. If you feeling particularly charitable, you can follow me on twitter or github just to see what am up to :wink:.
 

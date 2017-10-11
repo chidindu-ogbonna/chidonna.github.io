@@ -10,7 +10,7 @@ layout: page
 
 <p>
 </p>
-### Acitively Involved in
+### Actively Involved in
 * [Unistore](http://unistore.com.ng) - A multivendor market place for varsity students across Nigeria and the globe.
 
 <h2>Skills</h2>
