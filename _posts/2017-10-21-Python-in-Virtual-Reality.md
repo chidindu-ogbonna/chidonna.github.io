@@ -15,7 +15,7 @@ Growing up (i.e learning programming, of course), I started with Python, and end
 
 Well at least now I am older than I was then and I can see clearly, that life is not like that. Life is difficult, hard and mistakes are bound to be made and those can come back to hunt you, except the mistake is done in a "virtual world" of course.
 
-Working in a virtual environment makes mistakes acceptable and easy to handle. This post is for those coming into programming through Python or learning Python from another language. If you already work in a virtual environment, then this blog post is not for you. However, if you work in virtual environment and you are not using **[virtualenvwrapper][virtualenvwrapper] then this post is definitely for you.
+Working in a virtual environment makes mistakes acceptable and easy to handle. This post is for those coming into programming through Python or learning Python from another language. If you already work in a virtual environment, then this blog post is not for you. However, if you work in virtual environment and you are not using **[virtualenvwrapper][virtualenvwrapper]** then this post is definitely for you.
 
 ## What is a Virtual Environment
 A virtual environment is what the name suggests, an environment that is not "really real". Well it is not completely like that. It really is a layer beyond the reach of your computer operating system. Packages, frameworks or libraries installed in a virtual environment can not be accessed outside the virtual environment in which it was created.
