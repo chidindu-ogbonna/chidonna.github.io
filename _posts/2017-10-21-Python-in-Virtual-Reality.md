@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Virtual Reality for Python"
-date: 2017-08-02
+date: 2017-10-21
 tag: Python
 blog: true
 author: chidonna
