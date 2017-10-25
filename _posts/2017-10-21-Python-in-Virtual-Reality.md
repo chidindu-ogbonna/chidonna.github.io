@@ -68,7 +68,7 @@ After installation is complete, edit your ".bashrc" or ".bashrc_profile" and add
 
 ```sh
 export WORKON_HOME=$HOME/{a directory of your choice}
-source /usr/local/bin/virtualenvwrapper.sh
+source ~/.local/bin/virtualenvwrapper.sh
 ```
 
 Then we source the "bashrc" and create the `WORKON_HOME` directory we indicated in the "bashrc"
